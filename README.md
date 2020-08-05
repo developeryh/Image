@@ -52,11 +52,10 @@ graph LR
 
 * 添加到 Assets.xcassets
 	* Assets.xcassets 是苹果用来管理优化App图片的一个工具，在iOS8.0以上版本时（包括8.0）,打包的资源包图片被放在Assets.car中 ,图片被压缩。8.0以下时，和直接拖到工程中的图片，都存在MainBudnle中，没有压缩优化。
-	*  准备好两倍、三倍像素的图片
-	* ![](play@2x.png)
-	* ![](play@3x.png)
-	* 添加图片到xcassets （拖拽添加）
-	* ![](图片添加01.png)
+	* 准备好两倍、三倍像素的图片
+	* ![两倍](https://github.com/developeryh/Image/blob/master/imageDocument/play%402x.png)
+	* ![三倍](https://github.com/developeryh/Image/blob/master/imageDocument/play%403x.png)
+	* ![添加图片到xcassets （拖拽添加）](https://github.com/developeryh/Image/blob/master/imageDocument/图片添加01.png)
 	
 ### 本地图片加载
 *  ContentsOfFile
@@ -153,9 +152,9 @@ DispatchQueue.main.async {
 </figure>
 
 ### 图片的contentType
-* scaleToFill ： 图片变形去匹配imageview （默认）![](scaleToFill.png)
-*  scaleAspectFit : 图片保持真实比例，从视图中心点扩张，直到任意一边到imageview 的边界 ![](scaleAspectFit.png)
-*  scaleAspectFill : 图片保持真实比例，从视图中心点扩张，直到全部边到imageview 的边界（可能有些图片或冲破imageview 的边界）![](scaleAspectFill.png) 
+* scaleToFill ： 图片变形去匹配imageview （默认）![](https://github.com/developeryh/Image/blob/master/imageDocument/scaleToFill.png)
+*  scaleAspectFit : 图片保持真实比例，从视图中心点扩张，直到任意一边到imageview 的边界 ![](https://github.com/developeryh/Image/blob/master/imageDocument/scaleAspectFit.png)
+*  scaleAspectFill : 图片保持真实比例，从视图中心点扩张，直到全部边到imageview 的边界（可能有些图片或冲破imageview 的边界）![](https://github.com/developeryh/Image/blob/master/imageDocument/scaleAspectFill.png) 
 
 ### 图片加载存在的问题
 * 解码时占用太多的cpu，在主线程解码容易阻塞，掉帧
@@ -201,7 +200,7 @@ public static func asyncDownsampleImage(at URL:NSURL, maxSize:Float, complete:@e
 * 如果你觉得上面的方式还不够快，那么可以找个适当的时机，**提前把图片解码！**然后再把解码的图片给视图显示
 
 ### 性能
-![优化前](优化前.png)
-![优化后](优化后.png)
+* ![优化前](https://github.com/developeryh/Image/blob/master/imageDocument/优化前.png)
+* ![优化后](https://github.com/developeryh/Image/blob/master/imageDocument/优化后.png)
 * [demo工程地址](https://github.com/developeryh/Image)
 
