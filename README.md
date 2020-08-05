@@ -145,11 +145,9 @@ DispatchQueue.main.async {
     self.image = image;
 }
 ```
-<figure class="video_container">
-  <video controls="true" allowfullscreen="true" poster="path/to/poster_image.png">
-    <source src="01.mp4" type="video/mp4">
-  </video>
-</figure>
+
+[![Watch the video](https://github.com/developeryh/Image/blob/master/imageDocument/play%402x.png)](https://github.com/developeryh/Image/blob/master/imageDocument/01.mp4)
+
 
 ### 图片的contentType
 * scaleToFill ： 图片变形去匹配imageview （默认）![](https://github.com/developeryh/Image/blob/master/imageDocument/scaleToFill.png)
