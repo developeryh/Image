@@ -1,0 +1,6 @@
+Example/Pods
+.DS_Store
+Example/Podfile.lock
+Example/**/xcuserdata
+Example/**/xcshareddata
+Example/**/contents.xcworkspacedata
